@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import { BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
-import {MdLocationPin,MdLocationCity} from 'react-icons/md'
 
 export default function Sidebar() {
   return (
     <div className="flex flex-col px-2 ">
       <div className="w-100 object-cover ">
-        <img className="w-36 h-36 rounded-full " src="/images/pic.png" />
+        <img className="w-36 h-36 rounded-full " src="/images/try.jpg" />
       </div>
       <div>
         <h3 className="text-xl font-medium">Anurag Gharat</h3>

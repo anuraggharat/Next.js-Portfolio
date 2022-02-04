@@ -8,10 +8,14 @@ export default function Home({posts}) {
 
   return (
     <div className=" border-gray-400 px-2">
-      <h1 className="text-3xl">Featured Blogs</h1>
+      <h1 className="text-3xl z-0">Featured Blogs</h1>
       <div className="mt-10">
-          {posts && posts.map((post,index)=>(<BlogCard post={post.frontmatter} slug={post.slug} key={index} />))}
+        {posts &&
+          posts.map((post, index) => (
+            <BlogCard post={post.frontmatter} slug={post.slug} key={index} />
+          ))}
       </div>
+      
     </div>
   );
 }
