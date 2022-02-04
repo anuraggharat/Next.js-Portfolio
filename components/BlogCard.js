@@ -3,13 +3,13 @@ import React from 'react';
 
 export default function BlogCard({post,slug}) {
   return (
-    <div className="flex flex-row mb-16  pb-6 ">
+    <div className="flex flex-row mb-16  pb-6 cursor-pointer">
       <div className="w-3/5">
         <Link href={`/blog/${slug}`}>
-          <h1 className="text-2xl font-medium">{post.title}</h1>
+          <h1 className="text-xl font-medium">{post.title}</h1>
         </Link>
         <p className="text-xs text-gray-600">{post.date}</p>
-        <p className="text-gray-600 mt-3">{post.metaDesc}</p>
+        <p className="text-gray-600 mt-3 text-md">{post.metaDesc}</p>
         <div className="flex flex-row mt-4 text-sm">
           {post.tags.map((tag, index) => (
             <span
@@ -22,7 +22,7 @@ export default function BlogCard({post,slug}) {
         </div>
       </div>
       <div className="w-2/5 px-5">
-        <img className="rounded-xl shadow-lg" src={post.socialImage} />
+        <img className="rounded-xl hover:shadow-lg" src={post.socialImage} />
       </div>
     </div>
   );

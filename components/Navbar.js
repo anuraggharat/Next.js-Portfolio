@@ -13,14 +13,14 @@ function Navbar() {
             <Link href={"/"}>
               <a className="ml-8">Home</a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/about"}>
               <a className="ml-8">About</a>
             </Link>
 
-            <Link href={"/"}>
+            <Link href={"/projects"}>
               <a className="ml-8">Projects</a>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/blog"}>
               <a className="ml-8">Blogs</a>
             </Link>
           </div>
